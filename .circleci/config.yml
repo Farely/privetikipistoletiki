@@ -9,8 +9,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: |
-            sudo pip install pipenv
+          command: 
             pipenv install
       - run:
           command: pipenv run jupyter nbconvert --to html Untitled.ipynb
