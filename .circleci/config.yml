@@ -10,6 +10,7 @@ jobs:
       - checkout
       - run:
           command: |
+           conda install pip
            sudo pip install pipenv
            pipenv install
             
