@@ -10,9 +10,7 @@ jobs:
       - checkout
       - run:
           command: |
-            sudo pip install conda==4.2.7
-            sudo pip install pipenv --ignore-installed
-            pipenv install
+            pipenv install --ignore-installed
             
       - run:
           command: pipenv run jupyter nbconvert --to html Untitled.ipynb
