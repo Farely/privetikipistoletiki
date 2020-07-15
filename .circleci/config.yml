@@ -10,8 +10,7 @@ jobs:
       - checkout
       - run:
           command: |
-            sudo pip install pipenv
-            pipenv install
+           pip install -r requirements.txt
             
       - run:
           command: pipenv run jupyter nbconvert --to html Untitled.ipynb
