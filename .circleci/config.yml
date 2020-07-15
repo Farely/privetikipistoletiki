@@ -10,8 +10,10 @@ jobs:
       - checkout
       - run:
           command: |
+            sudo pip install conda==4.2.7
             sudo pip install pipenv --ignore-installed
             pipenv install
+            
       - run:
           command: pipenv run jupyter nbconvert --to html Untitled.ipynb
           name: Creating artifacts
