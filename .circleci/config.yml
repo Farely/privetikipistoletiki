@@ -18,7 +18,7 @@ jobs:
       - run:
           command: |
             mkdir tmp/;
-            mv dz.html tmp/;
+            mv Untitled.html tmp/;
       - store_artifacts:
           path: tmp/
 workflows:
